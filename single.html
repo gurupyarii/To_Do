@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="{% url 'display' %}">BACK</a>
+    <h4>{{data.task}} </h4><br>
+    {{data.description}} <br><br>
+    <a href="{% url 'update' data.id %}"><button>EDIT</button></a>
+    <a href="{% url 'delete' data.id %}"><button>DELETE</button></a>
+</body>
+</html>
